@@ -4,6 +4,8 @@
 
 ## 开发环境
 
+> 勿手动配置java环境变量，此操作由sdkman在安装中进行。
+
 ```bash
 curl -s "https://get.sdkman.io" | bash
 # sdk  list gradle
