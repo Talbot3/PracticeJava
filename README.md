@@ -30,7 +30,7 @@ sdk install java 8.0.242
 项目自动化构建工具，引入groovy，不再使用xml。
 
 - 自动化测试
-- 依赖管理
+- 依赖管理(自动解决版本冲突，使用最新的版本 )
 - 发布
 - 构建
 
@@ -49,6 +49,23 @@ sdk install java 8.0.242
 - 集合API
 - 闭包
 
+### 仓库配置
+
+```groovy
+repositories {
+    // Use jcenter for resolving dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    jcenter()
+    mavenLocal()
+    mavenCentral()
+}
+
+```
+
+### 依赖
+
+- 编译时依赖 compile "group:name:version"
+
 ## 工程初始化
 
 ```bash
@@ -66,3 +83,4 @@ gradle init
 
 - [新一代构建工具gradle](https://www.imooc.com/learn/833)
 - [gradle](https://www.cnblogs.com/louiezhou/p/11018847.html)
+- [maven cental](https://search.maven.org/)

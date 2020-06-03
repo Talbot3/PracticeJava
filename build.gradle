@@ -5,6 +5,13 @@
  * For more details take a look at the Java Quickstart chapter in the Gradle
  * User Manual available at https://docs.gradle.org/6.1.1/userguide/tutorial_java_projects.html
  */
+// group "com.practice.talbot3.App"
+// name rootProject.name
+// version rootProject.version
+// compileOptions {
+//     sourceCompatibility JavaVersion.VERSION_1_8
+//     targetCompatibility JavaVersion.VERSION_1_8
+// }
 
 plugins {
     // Apply the java plugin to add support for Java
@@ -21,9 +28,10 @@ repositories {
 }
 
 dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:28.1-jre'
-
+    implementation project(':lib_talbot3')
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
 }
