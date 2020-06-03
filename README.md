@@ -84,3 +84,6 @@ gradle init
 - [新一代构建工具gradle](https://www.imooc.com/learn/833)
 - [gradle](https://www.cnblogs.com/louiezhou/p/11018847.html)
 - [maven cental](https://search.maven.org/)
+- [Java中的集合](https://www.imooc.com/video/2415)
+- [全面解析Java注解](https://www.imooc.com/qa/456/t/0)
+- [Rxjava](https://mcxiaoke.gitbooks.io/rxdocs/content)
