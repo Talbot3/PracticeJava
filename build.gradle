@@ -24,13 +24,17 @@ plugins {
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
+    google()
     jcenter()
+    mavenCentral()
 }
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:28.1-jre'
+    implementation "io.reactivex.rxjava3:rxjava:3.0.4"
+
     implementation project(':lib_talbot3')
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
