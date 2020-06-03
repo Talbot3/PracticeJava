@@ -25,6 +25,30 @@ sdk install java 8.0.242
     - Java Extension Pack
     - Java Dependency Viewer
 
+## Gradle
+
+项目自动化构建工具，引入groovy，不再使用xml。
+
+- 自动化测试
+- 依赖管理
+- 发布
+- 构建
+
+
+### Groovy 
+
+- 敏捷的动态语言
+- 兼容java语法
+- 分号可选
+- 默认public
+- 自动添加getter/setter
+- == 等同于equals,不会有NULLPOINT
+- assert语句
+- 可选类型定义
+- 字符串
+- 集合API
+- 闭包
+
 ## 工程初始化
 
 ```bash
