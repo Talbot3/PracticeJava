@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "terminal.integrated.env.osx" : {
+        "GRADLE_USER_HOME": "${workspaceFolder}/.gradle"
+    }
+    
+}
