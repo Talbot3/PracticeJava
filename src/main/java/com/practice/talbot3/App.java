@@ -5,7 +5,8 @@ package com.practice.talbot3;
 
 import io.reactivex.rxjava3.core.*;
 import io.reactivex.rxjava3.schedulers.Schedulers;
-
+import lib_talbot3.lambda.MathOp;
+import lib_talbot3.utils.*;
 public class App {
    public String getGreeting() {
       return "hello world";
@@ -17,6 +18,12 @@ public class App {
             .subscribeOn(Schedulers.computation())
             .map(w -> w * w)
       )
-      .blockingSubscribe(System.out::println);   
+      .blockingSubscribe(System.out::println);
+      new Thread(()-> System.out.println("thread")).start();
+      MathOp<Integer> add = (Integer a, Integer b) -> a + b;
+      System.out.println("10 + 5 = " + add.op(10, 5));
+
+      Integer[] intArr = {1,2,3,4,5};
+      Inspect.printArray(intArr);
    }
 }
