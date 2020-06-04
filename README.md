@@ -79,6 +79,11 @@ gradle init
 ./gradlew run
 ```
 
+## 常用的java生态库
+
+- [rxjava](https://mcxiaoke.gitbooks.io/rxdocs/content)
+- [guava](http://ifeve.com/google-guava/)
+
 ## 参考
 
 - [新一代构建工具gradle](https://www.imooc.com/learn/833)
@@ -87,3 +92,4 @@ gradle init
 - [Java中的集合](https://www.imooc.com/video/2415)
 - [全面解析Java注解](https://www.imooc.com/qa/456/t/0)
 - [Rxjava](https://mcxiaoke.gitbooks.io/rxdocs/content)
+- [guava](https://github.com/google/guava/wiki)

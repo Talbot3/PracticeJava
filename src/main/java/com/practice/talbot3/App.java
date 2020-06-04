@@ -23,7 +23,7 @@ public class App {
       MathOp<Integer> add = (Integer a, Integer b) -> a + b;
       System.out.println("10 + 5 = " + add.op(10, 5));
 
-      Integer[] intArr = {1,2,3,4,5};
+      Integer[] intArr = {1,2,3,4,5, null};
       Inspect.printArray(intArr);
    }
 }
