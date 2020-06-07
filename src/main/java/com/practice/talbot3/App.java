@@ -3,15 +3,19 @@
  */
 package com.practice.talbot3;
 
+import java.io.UnsupportedEncodingException;
+
 import io.reactivex.rxjava3.core.*;
 import io.reactivex.rxjava3.schedulers.Schedulers;
 import lib_talbot3.lambda.MathOp;
 import lib_talbot3.utils.*;
+
 public class App {
    public String getGreeting() {
       return "hello world";
    }
-   public static void main(String args[]){
+
+   public static void main(String args[]) throws UnsupportedEncodingException {
       Flowable.range(1, 10)
       .flatMap(v ->
           Flowable.just(v)
@@ -25,5 +29,11 @@ public class App {
 
       Integer[] intArr = {1,2,3,4,5, null};
       Inspect.printArray(intArr);
+
+      String test = StringHelper.encode2Base64("hello world");
+      System.out.println(test);
+      String encodeStr = StringHelper.decoderBase64(test);
+      System.out.println(encodeStr);
+
    }
 }

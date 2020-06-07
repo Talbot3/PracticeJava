@@ -84,6 +84,38 @@ gradle init
 - [rxjava](https://mcxiaoke.gitbooks.io/rxdocs/content)
 - [guava](http://ifeve.com/google-guava/)
 
+## Java 基础知识
+
+- 基础数据类型
+- 面向对象(继承、接口、抽象类)
+- 注解
+- 泛型
+- 集合(与数据结构强相关)
+- Lambda
+- 异常处理
+- 多线程
+- 序列化
+
+### 主题强化
+
+- 网络
+- 文件
+- 流处理
+    - nio
+- java util concurrent
+- 分布式
+- 响应式处理 rxjava
+- java8\9\10\11\12\13\14新增特性
+    - java9
+        - jshell 
+    - java10
+        - 类型推导
+### 框架
+
+- Spring
+- Jetpack
+
+
 ## 参考
 
 - [新一代构建工具gradle](https://www.imooc.com/learn/833)

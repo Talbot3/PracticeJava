@@ -8,6 +8,7 @@
     "terminal.integrated.env.osx" : {
         "GRADLE_USER_HOME": "${workspaceFolder}/.gradle"
     },
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "gradle.debug": true
     
 }
