@@ -117,7 +117,7 @@ gradle init
     - java9
         - jshell 
     - java10
-        - 类型推导
+        - var 类型推导
 ### 框架
 
 - Spring
