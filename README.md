@@ -106,6 +106,14 @@ gradle init
 - 分布式
 - 响应式处理 rxjava
 - java8\9\10\11\12\13\14新增特性
+    - java8
+        - Lambda
+        - Base64
+        - LocalDate
+        - LocalDateTime
+        - DateTimeFormatter
+        - Duration
+        - Optional
     - java9
         - jshell 
     - java10
@@ -125,3 +133,5 @@ gradle init
 - [全面解析Java注解](https://www.imooc.com/qa/456/t/0)
 - [Rxjava](https://mcxiaoke.gitbooks.io/rxdocs/content)
 - [guava](https://github.com/google/guava/wiki)
+- [java新特性](http://v.xue.taobao.com/learn.htm?spm=a2174.7765244.0.0.kvTSNg&courseId=115585)
+
