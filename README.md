@@ -136,6 +136,7 @@ gradle init
 - [maven cental](https://search.maven.org/)
 - [Java中的集合](https://www.imooc.com/video/2415)
 - [全面解析Java注解](https://www.imooc.com/qa/456/t/0)
+    - [Google Auto](https://github.com/google/auto)
 - [Rxjava](https://mcxiaoke.gitbooks.io/rxdocs/content)
 - [guava](https://github.com/google/guava/wiki)
 - [java新特性](http://v.xue.taobao.com/learn.htm?spm=a2174.7765244.0.0.kvTSNg&courseId=115585)
