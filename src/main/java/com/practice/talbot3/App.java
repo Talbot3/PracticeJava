@@ -4,6 +4,10 @@
 package com.practice.talbot3;
 
 import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
+import java.util.Collections;
+
+import java.util.List;
 
 import io.reactivex.rxjava3.core.*;
 import io.reactivex.rxjava3.schedulers.Schedulers;
@@ -34,6 +38,9 @@ public class App {
       System.out.println(test);
       String encodeStr = StringHelper.decoderBase64(test);
       System.out.println(encodeStr);
+
+      String[] testArr = StringHelper.sort("aaAA", "bb", "cc", "dd", "ee");
+      Inspect.printArray(testArr);
 
    }
 }
