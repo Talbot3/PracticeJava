@@ -5,14 +5,12 @@ package com.practice.talbot3;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
-import java.util.Collections;
-
 import java.util.List;
+import java.util.function.BiFunction;
+import java.util.function.Function;
 
-import io.reactivex.rxjava3.core.*;
-import io.reactivex.rxjava3.schedulers.Schedulers;
-import lib_talbot3.lambda.MathOp;
-import lib_talbot3.utils.*;
+import lib_talbot3.utils.Inspect;
+import lib_talbot3.utils.StringHelper;
 
 public class App {
    public String getGreeting() {
@@ -20,19 +18,10 @@ public class App {
    }
 
    public static void main(String args[]) throws UnsupportedEncodingException {
-      Flowable.range(1, 10)
-      .flatMap(v ->
-          Flowable.just(v)
-            .subscribeOn(Schedulers.computation())
-            .map(w -> w * w)
-      )
-      .blockingSubscribe(System.out::println);
-      new Thread(()-> System.out.println("thread")).start();
-      MathOp<Integer> add = (Integer a, Integer b) -> a + b;
-      System.out.println("10 + 5 = " + add.op(10, 5));
+
 
       Integer[] intArr = {1,2,3,4,5, null};
-      Inspect.printArray(intArr);
+      Inspect.print(intArr);
 
       String test = StringHelper.encode2Base64("hello world");
       System.out.println(test);
@@ -40,7 +29,16 @@ public class App {
       System.out.println(encodeStr);
 
       String[] testArr = StringHelper.sort("aaAA", "bb", "cc", "dd", "ee");
-      Inspect.printArray(testArr);
+      Inspect.print(testArr);
+
+      Function<Integer, Integer> fn = f -> f * 100;
+      BiFunction<Integer, Integer, Integer> mathOp = (a,b)->a*b;
+      System.out.println(fn.apply(20));
+      System.out.println( mathOp.apply(20, 30));
+
+      List<Integer> list = Arrays.asList(2,1,4,3);
+      Inspect.print(list);
+      Inspect.printFilter(list, item -> item >= 3);
 
    }
 }

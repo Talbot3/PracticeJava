@@ -108,6 +108,11 @@ gradle init
 - java8\9\10\11\12\13\14新增特性
     - java8
         - Lambda
+            - Consumer<T>           #消息者
+            - Supplier<T>           #工厂方法
+            - Function<T, R>        #单入参+返回值
+            - BiFunction<T, U, R>   #双入参+返回值
+            - Predicate<T>          #断言型,过滤数据
         - Base64
         - LocalDate
         - LocalDateTime
