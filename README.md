@@ -127,6 +127,9 @@ gradle init
         - jshell 
     - java10
         - var 类型推导
+    - java14
+        - module
+        - jpackage
 ### 框架
 
 - Spring
