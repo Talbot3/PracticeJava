@@ -9,6 +9,8 @@ import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
+import java.util.Optional;
+
 import lib_talbot3.utils.Inspect;
 import lib_talbot3.utils.StringHelper;
 
@@ -18,7 +20,6 @@ public class App {
    }
 
    public static void main(String args[]) throws UnsupportedEncodingException {
-
 
       Integer[] intArr = {1,2,3,4,5, null};
       Inspect.print(intArr);
@@ -40,5 +41,25 @@ public class App {
       Inspect.print(list);
       Inspect.printFilter(list, item -> item >= 3);
 
+ 
+      List<Student> listStu = Arrays.asList(new Student(32),new Student(33),new Student(21),new Student(29),new Student(18));
+      Optional<Student> optional = listStu.stream().max((s1, s2) -> Integer.compare(s1.getAge(), s2.getAge()));
+      System.out.println("\n studen age: " + optional.get().getAge());
+   }
+
+   static class Student {
+      private int age;
+
+      public Student(int i) {
+         this.age = i;
+      }
+
+      public int getAge() {
+         return age;
+      }
+
+      public void setAge(int age) {
+         this.age = age;
+      }
    }
 }

@@ -119,6 +119,8 @@ gradle init
         - DateTimeFormatter
         - Duration
         - Optional
+        - Stream
+        - IntSummaryStatistics
     - java9
         - jshell 
     - java10
@@ -140,4 +142,4 @@ gradle init
 - [Rxjava](https://mcxiaoke.gitbooks.io/rxdocs/content)
 - [guava](https://github.com/google/guava/wiki)
 - [java新特性](http://v.xue.taobao.com/learn.htm?spm=a2174.7765244.0.0.kvTSNg&courseId=115585)
-
+- [Api 手册](https://www.apiref.com/)
