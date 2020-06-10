@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.Function;
-
+import java.util.function.Supplier;
 import java.util.Optional;
 
 import lib_talbot3.utils.Inspect;
@@ -45,10 +45,16 @@ public class App {
       List<Student> listStu = Arrays.asList(new Student(32),new Student(33),new Student(21),new Student(29),new Student(18));
       Optional<Student> optional = listStu.stream().max((s1, s2) -> Integer.compare(s1.getAge(), s2.getAge()));
       System.out.println("\n studen age: " + optional.get().getAge());
+      listStu.forEach(Student::toString);
    }
 
    static class Student {
       private int age;
+      private String name;
+
+      public static Student create(final Supplier<Student> supplier) {
+         return supplier.get();
+      }
 
       public Student(int i) {
          this.age = i;
@@ -60,6 +66,13 @@ public class App {
 
       public void setAge(int age) {
          this.age = age;
+      }
+
+      @Override
+      public String toString() {
+         String str = "Student [age=" + age + ", name=" + name + "]";
+         System.out.println(str);
+         return str;
       }
    }
 }

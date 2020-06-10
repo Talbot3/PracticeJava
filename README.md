@@ -121,6 +121,8 @@ gradle init
         - Optional
         - Stream
         - IntSummaryStatistics
+        - 方法引用, 例如 String::new String::length System.out::println
+
     - java9
         - jshell 
     - java10
