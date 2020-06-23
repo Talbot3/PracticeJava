@@ -33,6 +33,7 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
     implementation project(':lib_talbot3')
+    implementation project(':lib_aop')
     implementation 'com.alibaba.otter:canal.client:1.1.0'
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'

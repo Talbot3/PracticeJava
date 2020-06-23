@@ -148,3 +148,4 @@ gradle init
 - [guava](https://github.com/google/guava/wiki)
 - [java新特性](http://v.xue.taobao.com/learn.htm?spm=a2174.7765244.0.0.kvTSNg&courseId=115585)
 - [Api 手册](https://www.apiref.com/)
+- [Java8 编程思想](https://www.bookstack.cn/read/OnJava8/docs-book-Appendix-New-IO.md)
